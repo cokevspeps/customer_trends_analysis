@@ -27,7 +27,16 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
    git clone https://github.com/cokevspeps/customer_trends_analysis.git
    cd customer_trends_analysis
    ```
-2. **Open Shopping_Behavior_Analysis.ipynb notebook**
+
+2. **Create conda env and install packages**
+   ```bash
+   conda create --prefix .\.conda python=3.11 -y
+   conda activate .\.conda
+   ```
+   ```bash
+   conda install -r requirements.txt
+   ```
+3. **Open Shopping_Behavior_Analysis.ipynb notebook**
 
     This file contains:
 
@@ -39,7 +48,7 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
 
       - Connection to SQL Database
   
-3. **Load the data from Python notebook into MySQL**
+4. **Load the data from Python notebook into MySQL**
 
       - Create a database in SQL
 
@@ -49,7 +58,7 @@ The goal of this project is to simulate a corporate-grade end-to-end data analyt
   
       - Answer Business Questions using SQL Queries 
       
-4. **Connect the SQL Database to Power BI**
+5. **Connect the SQL Database to Power BI**
 
       - Open **customer_behavior_dashboard.pbix**
    
